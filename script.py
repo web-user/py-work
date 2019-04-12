@@ -13,7 +13,7 @@ class PythonLogin(unittest.TestCase):
         driver.get("http://test.web.page.com/")
         self.assertIn("title", driver.title)
         username = driver.find_element_by_xpath("//input[@name='email']")
-        username.send_keys("levchenko.amgrade@gmail.com")
+        username.send_keys("user@test.web.page.com")
         password = driver.find_element_by_xpath("//input[@name='password']")
         password.send_keys("1")
         loginbutton = driver.find_element_by_xpath("//input[@type='submit']")
