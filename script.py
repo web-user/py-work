@@ -1,6 +1,7 @@
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import logging
 
 class PythonTest(unittest.TestCase):
 
@@ -46,6 +47,7 @@ class PythonTest(unittest.TestCase):
         self.assertEqual(10, len(lists))
 
     def tearDown(self):
+        logging.basicConfig(filename = 'log_test.log', level = logging.DEBUG)
         self.driver.close()
 
 
