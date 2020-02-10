@@ -21,3 +21,13 @@ $ python script.py
 
 
 
+## Log Record unittest
+
+# how to display documentation for each method in the log. In python, this is best done with decorators.
+
+```sh
+$ cd LogRecord-unittest
+$ python3 test.py
+
+```
+
